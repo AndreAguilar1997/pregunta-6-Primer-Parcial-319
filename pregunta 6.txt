@@ -1,0 +1,75 @@
+// Más información acerca de F# en http://fsharp.net
+// Vea el proyecto "Tutorial de F#" para obtener más ayuda.
+open System
+
+let suma a b = a+b
+let resta a b = a-b
+let multiplicacion a b = a*b
+let division a b = a/b
+
+
+
+[<EntryPoint>]
+let main argumentos = 
+    Console.WriteLine("introdusca dos numeros")
+    let num1=Console.ReadLine()
+    let num2=Console.ReadLine()
+    let v1 = Convert.ToInt32(num1)
+    let v2 = Convert.ToInt32(num2)
+    let s = suma v1 v2
+    let r = resta v1 v2
+    let m = multiplicacion v1 v2
+    let d = division v1 v2
+
+    Console.WriteLine("la suma es: "+ s.ToString())
+    Console.WriteLine("la resta es: "+ r.ToString())
+    Console.WriteLine("la multiplicacion es: "+ m.ToString())
+    Console.WriteLine("la division es: "+ d.ToString())
+    
+
+
+    Console.WriteLine("escriba la operacion a ejecutar")
+    let signo = Console.ReadLine()
+    if signo.Equals("suma") then Console.WriteLine(" la suma es: " + s.ToString())
+    else if signo.Equals("resta") then  Console.WriteLine("la resta es: "+r.ToString()) 
+        else if signo.Equals("multiplicacion") then Console.WriteLine("la multiplicacion es: " + m.ToString()) 
+            else if signo.Equals("division") then Console.WriteLine("lal division es: "+d.ToString()) 
+                else Console.WriteLine("operacion no realizada")
+    Console.WriteLine(" realizar otra operacion")
+    let res= Console.ReadLine()
+    if res.Equals("si") then Console.WriteLine("escriba la operacion a ejecutar")
+    let signo = Console.ReadLine()
+    if signo.Equals("suma") then Console.WriteLine(" la suma es: " + s.ToString())
+    else if signo.Equals("resta") then  Console.WriteLine("la resta es: "+r.ToString()) 
+        else if signo.Equals("multiplicacion") then Console.WriteLine("la multiplicacion es: " + m.ToString()) 
+            else if signo.Equals("division") then Console.WriteLine("lal division es: "+d.ToString()) 
+                else Console.WriteLine("operacion no realizada")
+  
+
+    Console.WriteLine(" realizar otra operacion")
+    let res= Console.ReadLine()
+    if res.Equals("si") then Console.WriteLine("escriba la operacion a ejecutar")
+    let signo = Console.ReadLine()
+    if signo.Equals("suma") then Console.WriteLine(" la suma es: " + s.ToString())
+    else if signo.Equals("resta") then  Console.WriteLine("la resta es: "+r.ToString()) 
+        else if signo.Equals("multiplicacion") then Console.WriteLine("la multiplicacion es: " + m.ToString()) 
+            else if signo.Equals("division") then Console.WriteLine("lal division es: "+d.ToString()) 
+                else Console.WriteLine("operacion no realizada")
+
+
+    Console.WriteLine(" realizar otra operacion")
+    let res= Console.ReadLine()
+    if res.Equals("si") then Console.WriteLine("escriba la operacion a ejecutar")
+    let signo = Console.ReadLine()
+    if signo.Equals("suma") then Console.WriteLine(" la suma es: " + s.ToString())
+    else if signo.Equals("resta") then  Console.WriteLine("la resta es: "+r.ToString()) 
+        else if signo.Equals("multiplicacion") then Console.WriteLine("la multiplicacion es: " + m.ToString()) 
+            else if signo.Equals("division") then Console.WriteLine("lal division es: "+d.ToString()) 
+                else Console.WriteLine("operacion no realizada")
+
+
+
+   
+    let tecla = Console.ReadKey()
+
+    0 // devolver un código de salida entero
